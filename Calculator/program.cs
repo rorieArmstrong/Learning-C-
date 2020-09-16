@@ -22,7 +22,7 @@ namespace Calc
             else if (op == "divide"){
                 double result = num1 / num2;
             }
-            return result;
+            Console.Write(result);
         }
     }
 }
