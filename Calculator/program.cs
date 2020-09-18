@@ -20,7 +20,12 @@ namespace Calc
                 double result = num1 - num2;
             }
             else if (op == "divide"){
-                double result = num1 / num2;
+                try {
+                    double result = number1 / number2;
+                }
+                catch (DivideByZeroException) {
+                    Console.WriteLine("Division of {0} by zero.", num1);
+                }
             }
             Console.Write(result);
         }
